@@ -1,0 +1,11 @@
+opencv-python
+numpy
+pillow
+# Auf dem Mac wird die aktuelle Version verwendet. Auf Raspberry Pi OS ARM64
+# installiert pi_setup/install_mediapipe.sh die letzte passende ARM-Version
+# 0.10.18 in eine eigene Umgebung und prueft dort alle drei Modelle.
+mediapipe>=0.10.35,<0.11; sys_platform == "darwin" and platform_machine == "arm64"
+
+# Raspberry Pi OS: Picamera2, gpiozero, lgpio, OpenCV, NumPy und Pillow werden
+# mit pi_setup/install_on_pi.sh ueber apt installiert. Picamera2 soll laut
+# Raspberry-Pi-Dokumentation nicht aus PyPI in das Mac-venv installiert werden.

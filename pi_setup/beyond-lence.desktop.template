@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Beyond Lence
+Comment=Startet die Spektralkamera nach der Desktop-Anmeldung
+Exec=@LAUNCHER@
+Path=@PROJECT_DIR@
+Terminal=false
+X-GNOME-Autostart-enabled=true
+
